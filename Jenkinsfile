@@ -30,7 +30,7 @@ pipeline {
                                     sshTransfer(
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
-                                        remoteDirectory: '/tmp',
+                                        remoteDirectory: '/tmp/pkg/',
                                     )
                                 ]
                             )
