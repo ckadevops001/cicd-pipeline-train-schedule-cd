@@ -29,7 +29,7 @@ pipeline {
                                 transfers: [
                                     sshTransfer(
                                         sourceFiles: 'Jenkinsfile',
-                                        remoteDirectory: '/tmp/pkg/',
+                                        remoteDirectory: "/tmp/pkg/",
                                     )
                                 ]
                             )
