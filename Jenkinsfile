@@ -28,7 +28,8 @@ pipeline {
                                 ], 
                                 transfers: [
                                     sshTransfer(
-                                        sourceFiles: 'Jenkinsfile',
+                                        sourceFiles: 'dist/trainSchedule.zip',
+                                        removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
                                     )
                                 ]
